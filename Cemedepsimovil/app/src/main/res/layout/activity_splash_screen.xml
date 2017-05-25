@@ -1,26 +1,63 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#ffffff"
-                android:gravity="center_horizontal|center_vertical"
-                tools:context="org.cemedepsi.cemedepsimovil.SplashScreenActivity">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@drawable/banner_splash"
+                                             android:gravity="center_horizontal|center_vertical"
+                                             tools:context="org.cemedepsi.cemedepsimovil.SplashScreenActivity">
 
+    <ImageView
+        android:id="@+id/imgVwLogoAnimate"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/logo_cemedepsi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="8dp">
 
-        <ImageView
-            android:id="@+id/fullscreen_content"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/logo_cemedepsi"
+        <TextView
+            android:id="@+id/txtNameAPP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="CEMEDEPSI"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            />
+
+        <TextView
+            android:id="@+id/txtVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Version 1.0"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
             />
 
     </LinearLayout>
 
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

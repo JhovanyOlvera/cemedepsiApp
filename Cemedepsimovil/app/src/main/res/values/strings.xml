@@ -1,10 +1,7 @@
 <resources>
-
-
     <string name="app_name_hint">CEMEDEPSI</string>
     <string name="app_version">Versión %s</string>
-    <string name="app_name">Cemedepsimovil</string>
-
+    <string name="app_name">CEMEDEPSI</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

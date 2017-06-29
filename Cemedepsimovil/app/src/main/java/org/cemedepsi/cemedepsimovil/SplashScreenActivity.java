@@ -3,7 +3,6 @@ package org.cemedepsi.cemedepsimovil;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -30,18 +29,11 @@ public class SplashScreenActivity extends Activity {
         setContentView(R.layout.activity_splash_screen);
         ButterKnife.bind(this);
         setLabel();
-        startAnimationLogo();
     }
 
     private void setLabel() {
         txtNameAPP.setText(Constants.APP.NAME_APP);
         txtVersion.setText(String.format(getString(R.string.app_version), Constants.APP.VERSION_APP));
-    }
-
-    private void startAnimationLogo() {
-        rotateImage = AnimationUtils.loadAnimation(this, R.anim.rotate);
-        rotateImage.reset();
-        imgVwLogoAnimate.startAnimation(rotateImage);
     }
 
 }
